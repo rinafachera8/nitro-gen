@@ -1,8 +1,8 @@
 try:
     import colorama
 except ModuleNotFoundError as e:
-    modulename = str(e).split("No module named ")[1].replace("'", "")
-    input(f"Please install module with: pip install {modulename}")
+    module_name = str(e).split("No module named ")[1].replace("'", "")
+    input(f"Please install module with: pip install {module_name}")
     exit()
 
 from colorama import Fore, init
